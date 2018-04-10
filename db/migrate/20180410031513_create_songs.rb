@@ -4,4 +4,9 @@ class CreateSongs < ActiveRecord::Migration[5.1]
       t.string :name 
       t.integer :artist_id 
   end
+
+  def down 
+    drop_table :songs 
+  end 
+  
 end
